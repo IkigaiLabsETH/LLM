@@ -7,8 +7,8 @@ from threading import Thread
 mps_available = hasattr(torch.backends, "mps") and torch.backends.mps.is_available()
 device = torch.device("mps" if mps_available else "cpu")
 
-tokenizer = AutoTokenizer.from_pretrained("togethercomputer/RedPajama-INCITE-Chat-3B-v1")
-model = AutoModelForCausalLM.from_pretrained("togethercomputer/RedPajama-INCITE-Chat-3B-v1", torch_dtype=torch.float16)
+tokenizer = AutoTokenizer.from_pretrained("ikigailabseth/ghost")
+model = AutoModelForCausalLM.from_pretrained("ikigailabseth/ghost", torch_dtype=torch.float16)
 model = model.to(device)
 
 class StopOnTokens(StoppingCriteria):

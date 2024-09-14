@@ -1,7 +1,7 @@
 """Module for training a Llama 2 model using Replicate."""
 import os
 from dotenv import load_dotenv
-import replicate
+import ai_chat
 
 # Load environment variables from .env file
 load_dotenv()
@@ -16,7 +16,7 @@ if not api_token:
 os.environ["REPLICATE_API_TOKEN"] = api_token
 
 try:
-    client = replicate.Client()
+    client = ai_chat.Client()
     training = client.trainings.create(
         version="meta/llama-2-70b-chat:"
                 "02e509c789964a7ea8736978a43525956ef40397be9033abf9fd2badfe68c9e3",

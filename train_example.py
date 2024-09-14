@@ -1,6 +1,6 @@
-import replicate
+import ai_chat
 
-training = replicate.trainings.create(
+training = ai_chat.trainings.create(
     version="your-model-version",
     input={
         "train_data": "URL_to_your_Hugging_Face_dataset",
