@@ -1,10 +1,10 @@
-# REPLICATE
+# HOW TO FINE TUNE
 
 To fine-tune a language model using Replicate, follow these steps:
 
 1. **Prepare Data**: Format your dataset in JSONL, with one example per line. Include input and output fields, such as prompts and completions.
   
-2. **Set Up Project**: Use Replicate's platform to upload your data and select a model like LLaMA 2 for tuning.
+2. **Set Up Project**: Use Replicate's platform to upload your data and select a model.
 
 3. **Train the Model**: Start the fine-tuning process. Specify parameters like batch size, learning rate, and epochs.
 
@@ -83,8 +83,7 @@ huggingface-cli repo create my-model
 git push
 ```
 
-
-# HUGGING FACE
+# REPLICATE
 
 To fine-tune a model on Replicate using a dataset uploaded on Hugging Face, follow these steps:
 
